@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct ShyLaunchApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
             SettingsView()
